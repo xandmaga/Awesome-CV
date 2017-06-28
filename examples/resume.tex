@@ -46,22 +46,24 @@
 % If you would like to change the social information separator from a pipe (|) to something else
 \renewcommand{\acvHeaderSocialSep}{\quad\textbar\quad}
 
+\makeatletter
+\patchcmd{\@sectioncolor}{\color}{\mdseries\color}{}{}
+\makeatother
 
 %-------------------------------------------------------------------------------
 %	PERSONAL INFORMATION
 %	Comment any of the lines below if they are not required
 %-------------------------------------------------------------------------------
 % Available options: circle|rectangle,edge/noedge,left/right
-% \photo[rectangle,edge,right]{./examples/profile}
-\name{Byungjin}{Park}
-\position{Software Engineer{\enskip\cdotp\enskip}Security Expert}
-\address{246-1002, Gwangmyeongmayrouge Apt. 86, Cheongna lime-ro, Seo-gu, Incheon-si, 404-180, Rep. of KOREA}
+% \photo[rectangle,edge,right]{profile}
+\name{Alexandre}{Gomes}
+\position{Software Engineer{\enskip\cdotp\enskip}}
+\address{1061, Maria Heilbuth Surette Apt. 303, Belo Horizonte, Minas Gerais, Brazil}
 
-\mobile{(+82) 10-9030-1843}
-\email{posquit0.bj@gmail.com}
-\homepage{www.posquit0.com}
-\github{posquit0}
-\linkedin{posquit0}
+\mobile{(+55) 31-98213-8778}
+\email{xandmaga@outlook.com}
+\github{xandmaga}
+\linkedin{xandmaga}
 % \gitlab{gitlab-id}
 % \stackoverflow{SO-id}{SO-name}
 % \twitter{@twit}
@@ -69,7 +71,7 @@
 % \reddit{reddit-id}
 % \extrainfo{extra informations}
 
-\quote{``Be the change that you want to see in the world."}
+\quote{``The idea behind digital computers may be explained by saying that these machines are intended to carry out any operations which could be done by a human computer."}
 
 
 %-------------------------------------------------------------------------------
@@ -83,7 +85,7 @@
 % Leave any of these blank if they are not needed
 \makecvfooter
   {\today}
-  {Claud D. Park~~~·~~~Résumé}
+  {Alexandre F. M. Gomes~~~·~~~Résumé}
   {\thepage}
 
 
@@ -93,12 +95,15 @@
 %-------------------------------------------------------------------------------
 \input{resume/summary.tex}
 \input{resume/experience.tex}
-\input{resume/honors.tex}
-\input{resume/presentation.tex}
-\input{resume/writing.tex}
-\input{resume/committees.tex}
 \input{resume/education.tex}
+%\input{resume/honors.tex}
+%\input{resume/presentation.tex}
+\input{resume/courses.tex}
 \input{resume/extracurricular.tex}
+%\input{resume/writing.tex}
+%\input{resume/committees.tex}
+
+
 
 
 %-------------------------------------------------------------------------------
